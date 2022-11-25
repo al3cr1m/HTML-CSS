@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 300px;
+            border-collapse: collapse;
+            position: relative;
+           
+           
+        }
+
+        caption{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1EM;
+            background-color: rgb(0, 0, 0);
+            margin-bottom: 0px;
+            padding: 5px;
+        }
+
+        th, tfoot{
+            background-color: rgba(0, 0, 0, 0.677);
+        }
+        
+        td, th{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px;
+            
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        caption, th{
+            color: white;
+        }
+
+        tbody > tr:nth-child(3n) {
+            background-color: aquamarine;
+        }
+
+        thead  {
+    position: sticky;
+    top: -1px;
+    
+}
+
+        
+
+        tfoot{
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>UNIDADES FEDERATIVAS DO BRASIL</caption>
+        <thead>
+            <tr>
+               <th>Estado</th>
+               <th style="width: 100px ;">População</th>
+            </tr>
+           
+        </thead>
+
+        <tbody>
+            
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">49.568.465</td>
+            </tr>
+
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">15 411 923</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">12 411 923</td>
+            </tr>
+           
+
+            
+
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>População geral</th>
+                <td style="color:white ;" class="num">98.465.584</td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
