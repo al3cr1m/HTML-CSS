@@ -1,0 +1,46 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: #233eff;
+    color: white;
+
+}
+
+
+::-webkit-scrollbar{
+    padding: 0px;
+    margin: 0px;
+}
+/* PORTRAIT */
+@media screen and (orientation: portrait){
+    body{
+      background-image: url(../imagens/cev-portrait.jpg);
+      background-position: left bottom;
+      background-size: contain;
+  
+    }
+  
+  }
+
+/* PAISAGEM */
+@media screen and (orientation: landscape){
+    body{
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: center bottom;
+        background-size: contain;
+    
+      }
+   
+}
+  
+
+
+
