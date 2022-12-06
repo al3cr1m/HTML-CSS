@@ -21,7 +21,7 @@ h1 {
 
 
 nav{
-    display: block;
+    display: none;
 }
 
 
@@ -39,7 +39,7 @@ nav  a{
     
 }
 
-nav > ul > li > a:hover{
+nav > ul > li a:hover{
     color: rgb(91, 89, 89);
 }
 
@@ -53,6 +53,14 @@ nav > ul{
     
    
    
+}
+
+i#burguer{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(75, 75, 75);
 }
 
 main > article{
@@ -87,4 +95,3 @@ main{
 
 }
 
-@media screen and  (min-width: 800px)
